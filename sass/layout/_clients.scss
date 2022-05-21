@@ -1,0 +1,59 @@
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-color);
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.clients-icon-elements {
+  height: 92px;
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.clients-icon-item {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  .icon-link:hover &,
+  .icon-link:focus & {
+    fill: var(--accent-color);
+  }
+}
