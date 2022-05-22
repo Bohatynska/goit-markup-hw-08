@@ -25,18 +25,23 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="header-nav">
-          <a href="/" class="logo">
+                  <a href="/" class="logo">
             Web<span class="logo__color">Studio</span>
           </a>
-          <button type="button" class="menu-mobile-button">
-            <svg width="40" height="40">
-              <use href="./images/sprite.svg#icon-close-black"></use>
-               <use href="./images/sprite.svg#icon-menu"></use>
+          <button type="button" class="menu-open-btn">
+            <svg width="40" height="40" aria-label="переключатель моб меню">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
-            
           </button>
-          <ul class="site-nav">
+          <div class="mobile-menu is-open">
+            <button type="button" class="menu-close-btn">
+           <svg width="40" height="40" aria-label="переключатель моб меню">
+            <use class="icon-menu" href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+              
+            </button>
+        <nav class="header-nav">
+               <ul class="site-nav">
             <li>
               <a href="./index.html" class="site-nav__link current"
                 >Студия</a
@@ -74,6 +79,7 @@
             >
           </li>
         </ul>
+        </div>
       </div>
     </header>
 
@@ -145,7 +151,7 @@
         </div>
       </section>
 
-      <!-- <section class="section biz">
+      <section class="section biz">
         <div class="container">
           <h2 class="biz-title">Чем мы занимаемся</h2>
           <ul class="biz-item">
@@ -163,7 +169,7 @@
             </li>
           </ul>
         </div>
-      </section> --> -->
+      </section> -->
       <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
@@ -562,5 +568,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <!-- <script src="./js/menu.js"></script> -->
   </body>
 </html>

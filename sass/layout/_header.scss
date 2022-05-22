@@ -6,12 +6,12 @@
   align-items: center;
 }
 .header-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
-.menu-mobile-button {
-  background-color: #ececec;
-}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -31,10 +31,12 @@
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
 }
 
 .site-nav li {
@@ -98,6 +100,9 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 }
 // .contacts .contacts__item + .contacts__item {
 //   margin-left: 50px;

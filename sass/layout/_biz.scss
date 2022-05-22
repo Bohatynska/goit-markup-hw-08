@@ -1,6 +1,10 @@
 .section.biz {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
+
 .biz-title {
   font-weight: 700;
   font-size: 36px;
