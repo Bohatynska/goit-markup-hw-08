@@ -28,13 +28,13 @@
                   <a href="/" class="logo">
             Web<span class="logo__color">Studio</span>
           </a>
-          <button type="button" class="menu-open-btn">
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg width="40" height="40" aria-label="переключатель моб меню">
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
             </svg>
           </button>
-          <div class="mobile-menu is-open">
-            <button type="button" class="menu-close-btn">
+          <div class="mobile-menu is-open" data-menu>
+            <button type="button" class="menu-close-btn" data-menu-close>
            <svg width="40" height="40" aria-label="переключатель моб меню">
             <use class="icon-menu" href="./images/sprite.svg#icon-close-black"></use>
             </svg>
@@ -78,6 +78,12 @@
               +38 096 111 11 11</a
             >
           </li>
+        </ul>
+        <ul class="mobile-menu-soc-list">
+          <li class="mobile-menu-soc-item"><a href="" class="mobile-menu-soc-item__link">Instagram</a></li>
+          <li class="mobile-menu-soc-item"><a href="" class="mobile-menu-soc-item__link">Twitter</a></li>
+          <li class="mobile-menu-soc-item"><a href="" class="mobile-menu-soc-item__link">Facebook</a></li>
+          <li class="mobile-menu-soc-item"><a href="" class="mobile-menu-soc-item__link">LinkedIn</a></li>
         </ul>
         </div>
       </div>
@@ -568,6 +574,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
-    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
