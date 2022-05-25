@@ -20,9 +20,10 @@
 }
 .mobile-menu-soc-list {
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
+
 .mobile-menu-soc-item {
   padding-right: 10px;
   padding-left: 10px;
