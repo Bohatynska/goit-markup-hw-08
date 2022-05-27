@@ -1221,7 +1221,7 @@ img {
   overflow: hidden;
 }
 .projects-top-wrap:hover {
-  transform: translateX(0);
+  transform: translateY(0);
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
