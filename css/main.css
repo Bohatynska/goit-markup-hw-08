@@ -85,7 +85,7 @@ img {
 }
 
 .mobile-menu {
-  z-index: 1;
+  z-index: 999;
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -108,6 +108,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-soc-item {
@@ -143,6 +144,7 @@ img {
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -180,11 +182,6 @@ img {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
-@media screen and (max-width: 767px) {
-  .logo {
-    margin-right: 276px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .logo {
     margin-right: 88px;
@@ -195,10 +192,8 @@ img {
   color: var(--header-color);
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-bottom: 302px;
-  }
+.site-nav {
+  flex-shrink: 1;
 }
 @media screen and (min-width: 768px) {
   .site-nav {
@@ -256,6 +251,10 @@ img {
   }
 }
 
+.menu-open-btn {
+  position: absolute;
+  right: 6px;
+}
 @media screen and (max-width: 767px) {
   .menu-open-btn {
     padding: 0;
@@ -496,6 +495,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
@@ -677,22 +677,22 @@ img {
 }
 
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
   color: var(--title-color);
 }
-@media screen and (max-width: 767px) {
+.team-title:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
   .team-title {
-    font-size: 28px;
-    line-height: 1.18;
-    margin-bottom: 30px;
-  }
-  .team-title:last-child {
-    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
   }
 }
 
@@ -865,6 +865,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer-tablet {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -970,7 +971,6 @@ img {
 @media screen and (min-width: 768px) {
   .footer-soc {
     display: inline-block;
-    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1092,7 +1092,6 @@ img {
   .footer-input {
     display: flex;
     align-items: center;
-    margin-right: 12px;
     width: 358px;
   }
 }
@@ -1121,7 +1120,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-btn-subscribe {
     align-items: center;
-    margin-right: 10px;
     margin-left: 12px;
     margin-top: 0;
   }

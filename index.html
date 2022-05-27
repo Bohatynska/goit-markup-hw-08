@@ -28,13 +28,13 @@
         <a href="/" class="logo">
           Web<span class="logo__color">Studio</span>
         </a>
-        <button type="button" class="menu-open-btn" data-menu-open>
-          <svg width="40" height="40" aria-label="переключатель моб меню">
+        <button type="button" class="menu-open-btn is-open">
+          <svg width="39" height="39" aria-label="переключатель моб меню">
             <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="mobile-menu is-open" data-menu>
-          <button type="button" class="menu-close-btn" data-menu-close>
+        <div class="mobile-menu" data-menu>
+          <button type="button" class="menu-close-btn">
             <svg width="40" height="40" aria-label="переключатель моб меню">
               <use
                 class="icon-menu"
@@ -46,10 +46,12 @@
             <nav class="header-nav">
               <ul class="site-nav">
                 <li>
-                  <a href="./index.html" class="site-nav__link current">Студия</a>
+                  <a href="./index.html" class="site-nav__link current"
+                    >Студия</a
+                  >
                 </li>
                 <li>
-                  <a href="./portfolio.html" class="site-nav__link ">
+                  <a href="./portfolio.html" class="site-nav__link">
                     Портфолио</a
                   >
                 </li>
@@ -103,7 +105,10 @@
     <main>
       <section class="banner">
         <div class="container">
-          <h1 class="banner__title">Эффективные решения <br/> для вашего бизнеса</h1>
+          <h1 class="banner__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button type="button" class="banner-btn" data-modal-open>
             Заказать услугу
           </button>
@@ -127,7 +132,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits-list__item"">
+            <li class="benefits-list__item">
               <div class="benefits-list__box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
@@ -139,7 +144,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits-list__item"">
+            <li class="benefits-list__item">
               <div class="benefits-list__box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
@@ -151,7 +156,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="benefits-list__item"">
+            <li class="benefits-list__item">
               <div class="benefits-list__box">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -173,28 +178,38 @@
           <ul class="biz-item">
             <li class="biz-img">
               <picture>
-    <source srcset="./images/comp1x.jpg 1x, ./images/comp2x.jpg  2x" media="(min-width: 1200px)" />
-  <img src="./images/comp2x.jpg 2x" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" />
-</picture>
-                        <p class="biz-cover-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                <source
+                  srcset="./images/comp1x.jpg 1x, ./images/comp2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/comp2x.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" />
+              </picture>
+              <p class="biz-cover-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="biz-img">
-               <picture>
-              <source srcset="./images/mob1x.jpg 1x, ./images/mob2x.jpg  2x" media="(min-width: 1200px)" />
-  <img src="./images/mob2x.jpg  2x" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ" />
-</picture>
+              <picture>
+                <source
+                  srcset="./images/mob1x.jpg 1x, ./images/mob2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/mob2x.jpg" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ" />
+              </picture>
               <p class="biz-cover-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="biz-img">
-               <picture>
-              <source srcset="./images/disign1x.jpg 1x, ./images/disign2x.jpg  2x" media="(min-width: 1200px)" />
-  <img src="./images/disign2x.jpg  2x" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" />
-</picture>
+              <picture>
+                <source
+                  srcset="./images/disign1x.jpg 1x, ./images/disign2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/disign2x.jpg" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" />
+              </picture>
               <p class="biz-cover-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
@@ -202,12 +217,33 @@
             <li class="team-img">
               <div class="team-text">
                 <picture>
-  <source srcset="./images/team/igor-desktop1x.jpg 1x, ./images/team/igor-desktop2x.jpg 2x" media="(min-width: 1200px)" sizes="" type="" />
-  <source srcset="./images/team/igor-tablet1x.jpg 1x, ./images/team/igor-tablet2x.jpg 2x" media="(min-width: 768px)" sizes="" type="" />
-  <source srcset="./images/team/igor-mobile1x.jpg 1x, ./images/team/igor-mobile2x.jpg 2x" media="(min-width: 480px)" sizes="" type="" />
-  <img src="./images/team/igor-mobile2x.jpg" alt="Игорь Демьяненко" />
-</picture>
-                
+                  <source
+                    srcset="
+                      ./images/team/igor-desktop1x.jpg 1x,
+                      ./images/team/igor-desktop2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/igor-tablet1x.jpg 1x,
+                      ./images/team/igor-tablet2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/igor-mobile1x.jpg 1x,
+                      ./images/team/igor-mobile2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/team/igor-mobile2x.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
+
                 <div class="team-inside">
                   <h3 class="team-name">Игорь Демьяненко</h3>
                   <p class="team-prof">Product Designer</p>
@@ -248,13 +284,34 @@
 
             <li class="team-img">
               <div class="team-text">
-                 <picture>
-  <source srcset="./images/team/olga-desktop1x.jpg 1x, ./images/team/olga-desktop2x.jpg 2x" media="(min-width: 1200px)" sizes="" type="" />
-  <source srcset="./images/team/olga-tablet1x.jpg, ./images/team/olga-tablet2x.jpg 2x" media="(min-width: 768px)" sizes="" type="" />
-  <source srcset="./images/team/olga-mobile1x.jpg 1x, ./images/team/olga-mobile2x.jpg 2x" media="(min-width: 480px)" sizes="" type="" />
-  <img src="./images/team/olga-mobile2x.jpg" alt="Ольга Репина" />
-</picture>
-               
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/olga-desktop1x.jpg 1x,
+                      ./images/team/olga-desktop2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga-tablet1x.jpg,
+                      ./images/team/olga-tablet2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/olga-mobile1x.jpg 1x,
+                      ./images/team/olga-mobile2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/team/olga-mobile2x.jpg"
+                    alt="Ольга Репина"
+                  />
+                </picture>
+
                 <div class="team-inside">
                   <h3 class="team-name">Ольга Репина</h3>
                   <p class="team-prof">Frontend Developer</p>
@@ -295,12 +352,33 @@
             <li class="team-img">
               <div class="team-text">
                 <picture>
-  <source srcset="./images/team/nik-desktop1x.jpg 1x, ../images/team/nik-desktop2x.jpg 2x" media="(min-width: 1200px)" sizes="" type="" />
-  <source srcset="./images/team/nik-tablet1x.jpg, ./images/team/nik-tablet2x.jpg 2x" media="(min-width: 768px)" sizes="" type="" />
-  <source srcset="./images/team/nik-mobile1x.jpg 1x, ./images/team/nik-mobile2x.jpg 2x" media="(min-width: 480px)" sizes="" type="" />
-  <img src="./images/team/nik-mobile2x.jpg" alt="Николай Тарасов" />
-</picture>
-              
+                  <source
+                    srcset="
+                      ./images/team/nik-desktop1x.jpg  1x,
+                      ../images/team/nik-desktop2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nik-tablet1x.jpg,
+                      ./images/team/nik-tablet2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/nik-mobile1x.jpg 1x,
+                      ./images/team/nik-mobile2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/team/nik-mobile2x.jpg"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
+
                 <div class="team-inside">
                   <h3 class="team-name">Николай Тарасов</h3>
                   <p class="team-prof">Marketing</p>
@@ -341,12 +419,33 @@
             <li class="team-img">
               <div class="team-text">
                 <picture>
-  <source srcset="./images/team/mich-desktop1x.jpg 1x, ../images/team/mich-desktop2x.jpg 2x" media="(min-width: 1200px)" sizes="" type="" />
-  <source srcset="./images/team/mich-tablet1x.jpg, ./images/team/mich-tablet2x.jpg 2x" media="(min-width: 768px)" sizes="" type="" />
-  <source srcset="./images/team/mich-mobile1x.jpg 1x, ./images/team/mich-mobile2x.jpg 2x" media="(min-width: 480px)" sizes="" type="" />
-  <img src="./images/team/mich-mobile2x.jpg" alt="Михаил Ермаков" />
-</picture>
-               
+                  <source
+                    srcset="
+                      ./images/team/mich-desktop1x.jpg  1x,
+                      ../images/team/mich-desktop2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mich-tablet1x.jpg,
+                      ./images/team/mich-tablet2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mich-mobile1x.jpg 1x,
+                      ./images/team/mich-mobile2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="./images/team/mich-mobile2x.jpg"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
+
                 <div class="team-inside">
                   <h3 class="team-name">Михаил Ермаков</h3>
                   <p class="team-prof">UI Designer</p>
@@ -443,64 +542,64 @@
     <footer class="footer">
       <div class="container footer-flex-cont">
         <div class="footer-tablet">
-        <div class="footer-cont">
-          <a href="/" class="footer-logo">
-            <p>Web<span class="footer-logo-logo">Studio</span></p>
-          </a>
-          <address class="footer-address">
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a
-                  href="https://goo.gl/maps/CMXkun6qxGQYR8TdA"
-                  class="footer-item"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+          <div class="footer-cont">
+            <a href="/" class="footer-logo">
+              <p>Web<span class="footer-logo-logo">Studio</span></p>
+            </a>
+            <address class="footer-address">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a
+                    href="https://goo.gl/maps/CMXkun6qxGQYR8TdA"
+                    class="footer-item"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="mailto:info@example.com" class="footer-mail"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="tel:+380991111111" class="footer-tel"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-soc">
+            <p class="footer-text-add">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a href="mailto:info@example.com" class="footer-mail"
-                  >info@example.com</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer-item">
-                <a href="tel:+380991111111" class="footer-tel"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a href="" class="footer-soc-link">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-soc">
-          <p class="footer-text-add">ПРИСОЕДИНЯЙТЕСЬ</p>
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a href="" class="footer-soc-link">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
         <div>
           <p class="footer-text-add">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
@@ -524,9 +623,86 @@
       </div>
     </footer>
 
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="" width="18" height="18">
+            <use href="./images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <label class="modal-label" for="user-name">Имя</label>
+          <div class="modal-input-wrap">
+            <input
+              type="name"
+              class="modal-input"
+              name="user-name"
+              id="user-name"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
 
+          <label class="modal-label" for="user-tel">Телефон </label>
+          <div class="modal-input-wrap">
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              id="user-tel"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
 
-    /---------------------------MODAL-----------------------------------/
+          <label class="modal-label" for="user-email">Почта</label>
+          <div class="modal-input-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              id="user-email"
+            />
+            <svg class="input-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label class="modal-label"
+            >Комментарий
+            <textarea
+              name="user-comments"
+              id="user-comments"
+              placeholder="Введите текст"
+              class="modal-text"
+            ></textarea>
+          </label>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              class="input-chek is-hidden"
+              id="input-chek"
+              name="policy"
+              value="policy"
+            />
+            <label class="check-text" for="input-chek">
+              <span class="check-text-span">
+                <svg class="icon-check" width="11" height="8">
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю &nbsp
+              <a href="" class="check-policy"> Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-btn-send">Отправить</button>
+        </form>
+      </div>
+    </div> -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>

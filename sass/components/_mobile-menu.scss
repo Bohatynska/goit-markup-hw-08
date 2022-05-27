@@ -14,15 +14,13 @@
       transform: translateX(0);
     }
   }
-  z-index: 1;
-  //   @media screen and (min-width: 768px) {
-  //     display: none;
-  //   }
+  z-index: 999;
 }
 .mobile-menu-soc-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-soc-item {
