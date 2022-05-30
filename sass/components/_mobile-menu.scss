@@ -1,4 +1,7 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media screen and (max-width: 767px) {
     position: fixed;
     padding: 48px 40px;
@@ -18,7 +21,6 @@
 }
 .mobile-menu-soc-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
