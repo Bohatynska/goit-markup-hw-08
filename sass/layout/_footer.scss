@@ -13,6 +13,8 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -23,7 +25,8 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 0;
   }
 }
 .footer-logo {
@@ -131,8 +134,8 @@
 }
 
 .footer-text-add {
+  font-size: 14px;
   font-weight: 700;
-  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -140,6 +143,9 @@
   color: var(--footer-first-color);
   @media screen and (max-width: 1199px) {
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
   }
 }
 .footer-soc-link {
