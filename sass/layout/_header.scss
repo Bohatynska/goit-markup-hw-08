@@ -98,11 +98,24 @@
 }
 
 .tablet-header {
+  @media screen and (max-width: 767px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
   }
 }
+// .for-menu {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
 .menu-open-btn {
   position: absolute;
   right: 6px;
@@ -209,6 +222,7 @@
     align-items: center;
     margin-left: auto;
     padding: 0;
+    margin-top: 32px;
   }
 }
 .contacts .contacts__item + .contacts__item {
