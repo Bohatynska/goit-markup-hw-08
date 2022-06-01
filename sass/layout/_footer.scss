@@ -26,6 +26,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
     margin-bottom: 0;
   }
 }
@@ -117,7 +120,6 @@
     display: inline-block;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
     margin-left: 70px;
     align-self: flex-start;
   }
